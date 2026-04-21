@@ -69,8 +69,7 @@ static void generateRandomArray(int arr[], int n, int maxValue) {
   }
 }
 
-static long long elapsedNanoseconds(struct timespec start,
-                                    struct timespec end) {
+static long long elapsedNanoseconds(struct timespec start, struct timespec end) {
   long long seconds = (long long)(end.tv_sec - start.tv_sec);
   long long nanoseconds = (long long)(end.tv_nsec - start.tv_nsec);
   return seconds * 1000000000LL + nanoseconds;
